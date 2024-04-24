@@ -122,7 +122,7 @@ if [[ "$UBUNTU_VERSION" == "20.04" ]]; then
   fi
 
   decho "updating lamassu-server to v9.0.3..."
-  sourceHash=$'b798cbdd88b4071226cf20f189fd0f6caad4c9448fae40d9003f0b7944af53797'
+  sourceHash=$'798cbdd88b4071226cf20f189fd0f6caad4c9448fae40d9003f0b7944af53797'
   curl -sSLo /tmp/lamassu-server.tar.gz https://github.com/lamassu/lamassu-server/releases/download/v9.0.3/lamassu-server-v9.0.3.tar.gz >> $LOG_FILE 2>&1
   hash=$(sha256sum /tmp/lamassu-server.tar.gz | awk '{print $1}' | sed 's/ *$//g')
 
